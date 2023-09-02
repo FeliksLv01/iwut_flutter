@@ -73,7 +73,6 @@ flutter:
         - assets/images/login/
         - assets/images/loading/
         - assets/html/
-        - assets/js/
         - mock/
 
     fonts:
