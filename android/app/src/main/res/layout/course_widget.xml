@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/widget_container"
+    android:layout_width="320dp"
+    android:layout_height="170dp"
+    android:background="@drawable/course_widget_background">
+
+    <LinearLayout
+        android:id="@+id/widgetCourseHead"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_40"
+        android:background="@drawable/course_widget_header_background"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/qb_px_18"
+            android:layout_height="@dimen/qb_px_18"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/qb_px_16"
+            android:src="@drawable/ic_iwutlogo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/qb_px_8"
+            android:gravity="center_vertical"
+            android:text="@string/iwut"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/qb_px_20"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/widgetDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/widgetCourseHead"
+        android:layout_marginHorizontal="19.68dp"
+        android:layout_marginVertical="5.47dp"
+        android:includeFontPadding="false"
+        tools:text="星期一（第三周）  今天一共有4大节课"
+        android:textColor="@color/dateColor"
+        android:textSize="@dimen/qb_px_13" />
+
+    <LinearLayout
+        android:id="@+id/noCourse"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/widgetDate"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/noCourseText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/qb_px_8"
+            android:text="@string/noCourse"
+            android:textColor="@color/courseNameColor"
+            android:textSize="@dimen/qb_px_14" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/currentCourse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/widgetDate"
+        android:layout_marginStart="19.68dp"
+        android:visibility="invisible">
+
+        <RelativeLayout
+            android:id="@+id/currentCourseSingle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/currentCourseSingleSection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/courseNameColor"
+                android:text="02"
+                android:textSize="@dimen/qb_px_13"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/currentCourseMulti"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/currentCourseMultiSectionStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:textColor="@color/courseNameColor"
+                android:text="03"
+                android:textSize="@dimen/qb_px_13"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:layout_width="@dimen/qb_px_2"
+                android:layout_height="@dimen/qb_px_6"
+                android:background="@color/dividerGrey"
+                android:layout_centerInParent="true"/>
+
+            <TextView
+                android:id="@+id/currentCourseMultiSectionEnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/courseNameColor"
+                android:text="05"
+                android:textSize="@dimen/qb_px_13"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/qb_px_35"
+            android:layout_marginStart="@dimen/qb_px_8"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/currentCourseName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:textColor="@color/courseNameColor"
+                android:textSize="@dimen/qb_px_14"
+                android:maxLength="11"
+                tools:text="大学语文" />
+
+            <ImageView
+                android:id="@+id/currentCoursePositionIcon"
+                android:layout_width="@dimen/qb_px_9"
+                android:layout_height="@dimen/qb_px_12"
+                android:src="@mipmap/position"
+                android:layout_below="@id/currentCourseName"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:id="@+id/currentCourseRoom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toEndOf="@id/currentCoursePositionIcon"
+                android:layout_marginStart="@dimen/qb_px_5"
+                android:textColor="@color/courseNameColor"
+                android:textSize="@dimen/qb_px_10"
+                tools:text="博学东楼（原新二）-408" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/qb_px_30"
+            android:gravity="center_vertical|end">
+
+            <ImageView
+                android:layout_width="@dimen/qb_px_17"
+                android:layout_height="@dimen/qb_px_17"
+                android:layout_marginEnd="@dimen/qb_px_7"
+                android:scaleType="centerInside"
+                android:src="@mipmap/time" />
+
+            <TextView
+                android:id="@+id/currentCourseTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/courseTimeColor"
+                android:textSize="@dimen/qb_px_13"
+                tools:text="14:00-15:35" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/splitLine"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_2"
+        android:background="@color/dividerGrey"
+        android:layout_below="@id/currentCourse"
+        android:layout_marginHorizontal="@dimen/qb_px_20"
+        android:layout_marginVertical="@dimen/qb_px_10"
+        android:visibility="invisible"/>
+
+    <LinearLayout
+        android:id="@+id/nextCourse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/splitLine"
+        android:layout_marginStart="19.68dp"
+        android:visibility="invisible">
+
+        <RelativeLayout
+            android:id="@+id/nextCourseSingle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/nextCourseSingleSection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/courseNameColor"
+                android:text="02"
+                android:textSize="@dimen/qb_px_13"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/nextCourseMulti"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/nextCourseMultiSectionStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:textColor="@color/courseNameColor"
+                android:text="03"
+                android:textSize="@dimen/qb_px_13"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:layout_width="@dimen/qb_px_2"
+                android:layout_height="@dimen/qb_px_6"
+                android:background="@color/dividerGrey"
+                android:layout_centerInParent="true"/>
+
+            <TextView
+                android:id="@+id/nextCourseMultiSectionEnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/courseNameColor"
+                android:text="05"
+                android:textSize="@dimen/qb_px_13"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/qb_px_35"
+            android:layout_marginStart="@dimen/qb_px_8"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nextCourseName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:textColor="@color/courseNameColor"
+                android:textSize="@dimen/qb_px_14"
+                android:maxLength="12"
+                tools:text="大学语文" />
+
+            <ImageView
+                android:id="@+id/nextCoursePositionIcon"
+                android:layout_width="@dimen/qb_px_9"
+                android:layout_height="@dimen/qb_px_12"
+                android:src="@mipmap/position"
+                android:layout_below="@id/nextCourseName"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:id="@+id/nextCourseRoom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toEndOf="@id/nextCoursePositionIcon"
+                android:layout_marginStart="@dimen/qb_px_5"
+                android:textColor="@color/courseNameColor"
+                android:textSize="@dimen/qb_px_10"
+                tools:text="博学东楼（原新二）-408" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/qb_px_30"
+            android:gravity="center_vertical|end">
+
+            <ImageView
+                android:layout_width="@dimen/qb_px_17"
+                android:layout_height="@dimen/qb_px_17"
+                android:layout_marginEnd="@dimen/qb_px_7"
+                android:scaleType="centerInside"
+                android:src="@mipmap/time" />
+
+            <TextView
+                android:id="@+id/nextCourseTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/courseTimeColor"
+                android:textSize="@dimen/qb_px_13"
+                tools:text="14:00-15:35" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

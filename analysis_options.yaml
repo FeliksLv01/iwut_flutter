@@ -1,0 +1,292 @@
+linter:
+    rules:
+        # ===========================================
+        #   标识符
+        # ===========================================
+        # 类型名用大驼峰
+        - camel_case_types
+
+        # 库名用小写下划线
+        - library_names
+
+        # 文件名用小写下划线
+        - file_names
+
+        # 导入库 as 后用小写下划线
+        - library_prefixes
+
+        # 普通变量和成员用小驼峰
+        - non_constant_identifier_names
+        - constant_identifier_names
+
+        # ===========================================
+        #   导入顺序
+        # ===========================================
+        - directives_ordering
+
+        # ===========================================
+        #   格式
+        # ===========================================
+        # 流程控制代码 必须用大括号包起来
+        - curly_braces_in_flow_control_structures
+
+        # ===========================================
+        #   用法
+        # ===========================================
+
+        # 库
+        # -----------
+
+        # PREFER relative paths when importing libraries within your own package’s lib directory.
+        - avoid_relative_lib_imports
+
+        # 字符串
+        # -----------
+
+        # DO use adjacent strings to concatenate string literals.
+        - prefer_adjacent_string_concatenation
+
+        # PREFER using interpolation to compose strings and values.//70
+        #- prefer_interpolation_to_compose_strings
+
+        # AVOID using curly braces in interpolation when not needed. //19
+        #- unnecessary_brace_in_string_interps
+
+        # 集合
+        # -----------
+
+        # DO use collection literals when possible. //24
+        #- prefer_collection_literals
+
+        # AVOID using Iterable.forEach() with a function literal. //38
+        #- avoid_function_literals_in_foreach_calls
+
+        # DO use whereType() to filter a collection by type.
+        - prefer_iterable_whereType
+
+        # 函数
+        # -----------
+
+        # DO use a function declaration to bind a function to a name. //8
+        #- prefer_function_declarations_over_variables
+
+        # DON’T create a lambda when a tear-off will do. //71
+        #- unnecessary_lambdas
+
+        # 参数
+        # -----------
+
+        # [重要]DO use = to separate a named parameter from its default value. //104
+        #- prefer_equal_for_default_values
+
+        # DON’T use an explicit default value of null.
+        - avoid_init_to_null
+
+        # 成员
+        # -----------
+
+        # DON’T wrap a field in a getter and setter unnecessarily.
+        - unnecessary_getters_setters
+
+        # CONSIDER using => for simple members. //1156
+        #- prefer_expression_function_bodies
+
+        # [重要]DON’T use this. when not needed to avoid shadowing. //205
+        #- unnecessary_this
+
+        # 构造器
+        # -----------
+
+        # DO use initializing formals when possible.
+        - prefer_initializing_formals
+
+        # DON’T type annotate initializing formals.
+        - type_init_formals
+
+        # DO use ; instead of {} for empty constructor bodies.
+        - empty_constructor_bodies
+
+        # [重要]DON’T use new. // 6180
+        #- unnecessary_new
+
+        # [重要]DON’T use const redundantly. //130
+        #- unnecessary_const
+
+        # 错误处理
+        # -----------
+        # AVOID catches without on clauses. //210
+        #- avoid_catches_without_on_clauses
+
+        # DO use rethrow to rethrow a caught exception.
+        - use_rethrow_when_possible
+
+        # ===========================================
+        #   设计
+        # ===========================================
+
+        # 命名
+        # -----------
+
+        # PREFER naming a method to___() if it copies the object’s state to a new object.
+        # PREFER naming a method as___() if it returns a different representation backed by the original object.
+        - use_to_and_as_if_applicable
+
+        # 类
+        # -----------
+
+        # AVOID defining a one-member abstract class when a simple function will do. //2
+        #- one_member_abstracts
+
+        # [重要,改动大]AVOID defining a class that contains only static members.//12
+        #- avoid_classes_with_only_static_members
+
+        # 成员
+        # -----------
+
+        # [重要]PREFER making fields and top-level variables final. //79
+        #- prefer_final_fields
+
+        # [重要]DO use setters for operations that conceptually change properties. //1
+        #- use_setters_to_change_properties
+
+        # [不遵守]DON’T define a setter without a corresponding getter.
+        #- avoid_setters_without_getters
+
+        # AVOID returning null from members whose return type is bool, double, int, or num.
+        - avoid_returning_null
+
+        # AVOID returning this from methods just to enable a fluent interface.
+        - avoid_returning_this
+
+        # 类型
+        # -----------
+
+        # [重要]PREFER type annotating public fields and top-level variables if the type isn’t obvious. //67
+        # CONSIDER type annotating private fields and top-level variables if the type isn’t obvious.
+        #- prefer_typing_uninitialized_variables
+
+        # AVOID type annotating initialized local variables. //1747
+        #- omit_local_variable_types
+
+        # DON’T specify a return type for a setter.
+        - avoid_return_types_on_setters
+
+        # [重要]DON’T use the legacy typedef syntax. //25
+        #- prefer_generic_function_type_aliases
+
+        # PREFER inline function types over typedefs.
+        - avoid_private_typedef_functions
+
+        # CONSIDER using function type syntax for parameters.
+        - use_function_type_syntax_for_parameters
+
+        # 参数
+        # -----------
+
+        # [重要，改动大]AVOID positional boolean parameters. //12
+        #- avoid_positional_boolean_parameters
+
+        # 相等
+        # -----------
+
+        # DO override hashCode if you override ==.
+        - hash_and_equals
+
+        # DON’T check for null in custom == operators.
+        - avoid_null_checks_in_equality_operators
+        - avoid_print
+        - avoid_returning_null_for_future
+        - avoid_slow_async_io
+        - avoid_types_as_parameter_names
+        - avoid_web_libraries_in_flutter
+        - cancel_subscriptions
+        - close_sinks
+        - comment_references
+        - control_flow_in_finally
+        - diagnostic_describe_all_properties
+        - invariant_booleans
+        - collection_methods_unrelated_type
+        #    - literal_only_boolean_expressions
+        - no_adjacent_strings_in_list
+        - no_duplicate_case_values
+        - no_logic_in_create_state
+        - prefer_void_to_null
+        - unnecessary_statements
+        - valid_regexps
+#    - always_declare_return_types
+#    - always_put_control_body_on_new_line
+##    - annotate_overrides
+
+analyzer:
+    #  enable-experiment:
+    #    - non-nullable
+    plugins:
+    #    - dart_code_metrics
+    errors:
+        # 忽略规则
+        deprecated_member_use_from_same_package: ignore
+        deprecated_member_use: ignore
+        comment_references: ignore
+        avoid_as: ignore
+        non_constant_identifier_names: ignore # 驼峰命名
+        constant_identifier_names: ignore
+        diagnostic_describe_all_properties: ignore
+
+        # 警告规则
+        avoid_slow_async_io: warning
+        avoid_print: warning
+
+        # 重要规则-全部改成 error，不需要的文件或者行加忽略规则
+        camel_case_types: error
+        library_names: error
+        file_names: error
+        library_prefixes: error
+
+        curly_braces_in_flow_control_structures: error
+        prefer_equal_for_default_values: error
+        unnecessary_this: error
+        unnecessary_new: error
+        unnecessary_const: error
+        avoid_classes_with_only_static_members: error
+        prefer_final_fields: error
+        use_setters_to_change_properties: error
+        prefer_typing_uninitialized_variables: error
+        prefer_generic_function_type_aliases: error
+        avoid_positional_boolean_parameters: error
+        dead_code: error
+        unused_field: error
+        unused_element: error
+        avoid_web_libraries_in_flutter: error
+        cancel_subscriptions: error
+        invariant_booleans: error
+        #avoid_as: error
+
+        # 特别重要规则
+        must_be_immutable: error
+
+    exclude:
+        # 排除的文件和目录
+        - plugin/**
+        - script/**
+        - packages/**
+        - tools/**
+        #    - test/**
+        #    - test_driver/**
+        - ios/**
+        - android/**
+        - lib/database/*.g.dart
+
+dart_code_metrics:
+    anti-patterns:
+        - long-method
+    metrics:
+        cyclomatic-complexity: 10
+        lines-of-executable-code: 100
+        number-of-arguments: 4 #不生效？
+    metrics-exclude: # 这里排除不生效，需要上面的 exclude
+        - test/**
+    rules:
+        #    - newline-before-return # 返回之前空一行
+        - no-boolean-literal-compare
+        #    - no-empty-block # 空的 block
+        - prefer-trailing-comma-for-collection # 末尾有匹配的逗号

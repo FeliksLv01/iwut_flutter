@@ -1,0 +1,107 @@
+{
+  "id": "2165129",
+  "name": "iwut",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "8620098",
+      "name": "planet",
+      "font_class": "planet",
+      "unicode": "e7a8",
+      "unicode_decimal": 59304
+    },
+    {
+      "icon_id": "15838484",
+      "name": "hide",
+      "font_class": "hide1",
+      "unicode": "e673",
+      "unicode_decimal": 58995
+    },
+    {
+      "icon_id": "18808338",
+      "name": "eye",
+      "font_class": "eye",
+      "unicode": "e88c",
+      "unicode_decimal": 59532
+    },
+    {
+      "icon_id": "10506954",
+      "name": "user",
+      "font_class": "user",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    },
+    {
+      "icon_id": "11891783",
+      "name": "warning",
+      "font_class": "warning",
+      "unicode": "e66b",
+      "unicode_decimal": 58987
+    },
+    {
+      "icon_id": "772952",
+      "name": "about",
+      "font_class": "about1",
+      "unicode": "e648",
+      "unicode_decimal": 58952
+    },
+    {
+      "icon_id": "128755",
+      "name": "sun",
+      "font_class": "sun",
+      "unicode": "e6df",
+      "unicode_decimal": 59103
+    },
+    {
+      "icon_id": "8953060",
+      "name": "moon",
+      "font_class": "moon",
+      "unicode": "e821",
+      "unicode_decimal": 59425
+    },
+    {
+      "icon_id": "938293",
+      "name": "down",
+      "font_class": "down",
+      "unicode": "e65e",
+      "unicode_decimal": 58974
+    },
+    {
+      "icon_id": "1469190",
+      "name": "delete",
+      "font_class": "delete",
+      "unicode": "e84d",
+      "unicode_decimal": 59469
+    },
+    {
+      "icon_id": "5478608",
+      "name": "image",
+      "font_class": "image",
+      "unicode": "e92e",
+      "unicode_decimal": 59694
+    },
+    {
+      "icon_id": "8952534",
+      "name": "book-reader",
+      "font_class": "book-reader",
+      "unicode": "e7e5",
+      "unicode_decimal": 59365
+    },
+    {
+      "icon_id": "9940269",
+      "name": "edit",
+      "font_class": "edit",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "15167558",
+      "name": "add",
+      "font_class": "add_2",
+      "unicode": "e64c",
+      "unicode_decimal": 58956
+    }
+  ]
+}

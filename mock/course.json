@@ -1,0 +1,42 @@
+{
+    "code": 0,
+    "message": "课表解析成功",
+    "data": [
+        {
+            "courseID": 0,
+            "name": "通信原理D",
+            "teacher": "王虹,杨媛媛",
+            "room": "北教三(原鉴3)-404",
+            "weekStart": 1,
+            "weekEnd": 13,
+            "sectionStart": 4,
+            "sectionEnd": 5,
+            "weekDay": 1,
+            "xnXq": null
+        },
+        {
+            "courseID": 0,
+            "name": "数字信号处理",
+            "teacher": "阙大顺",
+            "room": "北教三(原鉴3)-403",
+            "weekStart": 1,
+            "weekEnd": 13,
+            "sectionStart": 4,
+            "sectionEnd": 5,
+            "weekDay": 1,
+            "xnXq": null
+        },
+        {
+            "courseID": 1,
+            "name": "现代检测技术",
+            "teacher": "曹辉",
+            "room": "北教三(原鉴3)-203",
+            "weekStart": 1,
+            "weekEnd": 13,
+            "sectionStart": 1,
+            "sectionEnd": 2,
+            "weekDay": 2,
+            "xnXq": null
+        }
+    ]
+}

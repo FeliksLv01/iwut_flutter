@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="grey">#303030</color>
+    <color name="widgetBlue">#0789b1</color>
+    <color name="widgetBlack">#1C1C1E</color>
+    <color name="dividerBlue">#0789b1</color>
+    <color name="dividerGrey">#6B6A6C</color>
+    <color name="dateColor">#FFFFFF</color>
+    <color name="courseNameColor">#FFFFFF</color>
+    <color name="courseTimeColor">#BFBFC9</color>
+</resources>

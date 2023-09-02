@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<dimen name="qb_px_1">1.17dp</dimen>
+<dimen name="qb_px_2">2.35dp</dimen>
+<dimen name="qb_px_3">3.52dp</dimen>
+<dimen name="qb_px_4">4.69dp</dimen>
+<dimen name="qb_px_5">5.87dp</dimen>
+<dimen name="qb_px_6">7.04dp</dimen>
+<dimen name="qb_px_7">8.21dp</dimen>
+<dimen name="qb_px_8">9.39dp</dimen>
+<dimen name="qb_px_9">10.56dp</dimen>
+<dimen name="qb_px_10">11.73dp</dimen>
+<dimen name="qb_px_11">12.91dp</dimen>
+<dimen name="qb_px_12">14.08dp</dimen>
+<dimen name="qb_px_13">15.25dp</dimen>
+<dimen name="qb_px_14">16.43dp</dimen>
+<dimen name="qb_px_15">17.60dp</dimen>
+<dimen name="qb_px_16">18.77dp</dimen>
+<dimen name="qb_px_17">19.95dp</dimen>
+<dimen name="qb_px_18">21.12dp</dimen>
+<dimen name="qb_px_19">22.29dp</dimen>
+<dimen name="qb_px_20">23.47dp</dimen>
+<dimen name="qb_px_21">24.64dp</dimen>
+<dimen name="qb_px_22">25.81dp</dimen>
+<dimen name="qb_px_23">26.99dp</dimen>
+<dimen name="qb_px_24">28.16dp</dimen>
+<dimen name="qb_px_25">29.33dp</dimen>
+<dimen name="qb_px_26">30.51dp</dimen>
+<dimen name="qb_px_27">31.68dp</dimen>
+<dimen name="qb_px_28">32.85dp</dimen>
+<dimen name="qb_px_29">34.03dp</dimen>
+<dimen name="qb_px_30">35.20dp</dimen>
+<dimen name="qb_px_31">36.37dp</dimen>
+<dimen name="qb_px_32">37.55dp</dimen>
+<dimen name="qb_px_33">38.72dp</dimen>
+<dimen name="qb_px_34">39.89dp</dimen>
+<dimen name="qb_px_35">41.07dp</dimen>
+<dimen name="qb_px_36">42.24dp</dimen>
+<dimen name="qb_px_37">43.41dp</dimen>
+<dimen name="qb_px_38">44.59dp</dimen>
+<dimen name="qb_px_39">45.76dp</dimen>
+<dimen name="qb_px_40">46.93dp</dimen>
+</resources>

@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 2165129 */
+  src: url('iconfont.woff2?t=1625798331151') format('woff2'),
+       url('iconfont.woff?t=1625798331151') format('woff'),
+       url('iconfont.ttf?t=1625798331151') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-planet:before {
+  content: "\e7a8";
+}
+
+.icon-hide1:before {
+  content: "\e673";
+}
+
+.icon-eye:before {
+  content: "\e88c";
+}
+
+.icon-user:before {
+  content: "\e619";
+}
+
+.icon-warning:before {
+  content: "\e66b";
+}
+
+.icon-about1:before {
+  content: "\e648";
+}
+
+.icon-sun:before {
+  content: "\e6df";
+}
+
+.icon-moon:before {
+  content: "\e821";
+}
+
+.icon-down:before {
+  content: "\e65e";
+}
+
+.icon-delete:before {
+  content: "\e84d";
+}
+
+.icon-image:before {
+  content: "\e92e";
+}
+
+.icon-book-reader:before {
+  content: "\e7e5";
+}
+
+.icon-edit:before {
+  content: "\e601";
+}
+
+.icon-add_2:before {
+  content: "\e64c";
+}
+

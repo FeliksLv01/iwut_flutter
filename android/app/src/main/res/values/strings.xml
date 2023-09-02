@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="noCourse">今天没有课哦～</string>
+    <string name="loading">加载中</string>
+    <string name="noNextCourse">今天的课都上完啦～</string>
+    <string name="iwut">掌上吾理</string>
+</resources>

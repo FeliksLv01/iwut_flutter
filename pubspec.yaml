@@ -1,0 +1,82 @@
+name: iwut_flutter
+description: Token IWUT.
+
+publish_to: 'none'
+
+version: 1.2.6
+
+environment:
+    sdk: '>=3.0.2 <4.0.0'
+
+dependencies:
+    flutter:
+        sdk: flutter
+    flutter_localizations:
+        sdk: flutter
+    # 屏幕适配
+    flutter_screenutil: 5.0.0+2
+    # 路由
+    fluro: ^2.0.3
+    # 轮播图
+    flutter_swiper_null_safety: ^1.0.2
+    # webview
+    flutter_inappwebview: ^5.7.2+3
+    # 动态授权
+    permission_handler: ^10.4.3
+    # 网络请求
+    dio: ^4.0.0
+    # 状态管理
+    provider: ^6.0.1
+    # 设备信息
+    device_info_plus: ^9.0.3
+    # 本地存储
+    shared_preferences: ^2.2.0
+    # 提示组件
+    fluttertoast: ^8.2.2
+    # 选择背景图片
+    image_picker: ^0.8.3+2
+    image_cropper: ^5.0.0
+    # 文件路径，用于保存背景图片
+    path_provider: ^2.1.0
+    # 用于查看版本
+    package_info_plus: ^4.1.0
+    url_launcher: ^6.1.14
+    # 层叠icon
+    badges: ^2.0.1
+    # orm
+    floor: ^1.0.0
+    home_widget: ^0.1.3
+    logger: ^1.0.0
+    share_extend: ^2.0.0
+    pull_to_refresh: ^2.0.0
+
+dev_dependencies:
+    flutter_test:
+        sdk: flutter
+    flutter_lints: ^2.0.0
+    #编绎运行
+    floor_generator: ^1.0.0
+    build_runner: ^2.0.2
+    flutter_launcher_icons: ^0.9.1
+
+flutter_icons:
+    android: false
+    ios: true
+    image_path: 'assets/logo.png'
+
+# The following section is specific to Flutter.
+flutter:
+    uses-material-design: true
+    assets:
+        - assets/images/
+        - assets/images/room/
+        - assets/images/login/
+        - assets/images/loading/
+        - assets/html/
+        - assets/js/
+        - mock/
+
+    fonts:
+        - family: IconFont
+          fonts:
+              - asset: assets/iconfont/iconfont.ttf

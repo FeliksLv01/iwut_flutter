@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1,IE=edge" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,user-scalable=no,maximum-scale=1,minimum-scale=1.0,minimal-ui"
+    />
+    <meta name="full-screen" content="yes" />
+    <meta name="x5-fullscreen" content="true" />
+    <title>404 - 无法找到该页</title>
+    <style>
+      a,
+      a:focus,
+      a:hover {
+        text-decoration: none;
+      }
+      :after,
+      :before {
+        box-sizing: border-box;
+      }
+      body,
+      html {
+        height: 100%;
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        font-family: 'Segoe UI', 'Open Sans', 'Lucida Grande', FreeSans, Arimo, 'Source Sans Pro', 'Droid Sans',
+          'Helvetica Neue', Helvetica, 'Microsoft YaHei UI', 'Microsoft YaHei', 'Hiragino Sans GB',
+          'Hiragino Sans GB W3', Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: #646464;
+        background-color: #f5f5f5;
+        display: table;
+        width: 100%;
+      }
+      h1,
+      h2 {
+        margin: 0;
+        font-weight: 600;
+        line-height: 1.2;
+        color: inherit;
+      }
+      ::-moz-selection {
+        text-shadow: none;
+        background: #b3d4fc;
+      }
+      ::selection {
+        text-shadow: none;
+        background: #b3d4fc;
+      }
+      .bg-white {
+        background: #fff;
+      }
+      .text-center {
+        text-align: center;
+      }
+      .text-muted {
+        color: #999;
+      }
+      .text-city {
+        color: #ff6b6b;
+      }
+      a {
+        color: #5c90d2;
+        transition: color 0.12s ease-out;
+      }
+      a:focus,
+      a:hover {
+        color: #3169b1;
+      }
+      a:active,
+      a:hover {
+        outline: 0;
+      }
+      a:active {
+        color: #5c90d2 !important;
+      }
+      a.link-effect {
+        position: relative;
+      }
+      a.link-effect:before {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        content: '';
+        background-color: #3169b1;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        transition: -webkit-transform 0.12s ease-out;
+        transition: transform 0.12s ease-out;
+        transition: transform 0.12s ease-out, -webkit-transform 0.12s ease-out;
+      }
+      a:focus.link-effect:before,
+      a:hover.link-effect:before {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+      }
+      .animated {
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+      }
+      @-webkit-keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      .fadeIn {
+        -webkit-animation-name: fadeIn;
+        animation-name: fadeIn;
+      }
+      @-webkit-keyframes fadeInUp {
+        from {
+          opacity: 0;
+          -webkit-transform: translate3d(0, 100%, 0);
+          transform: translate3d(0, 100%, 0);
+        }
+        100% {
+          opacity: 1;
+          -webkit-transform: none;
+          transform: none;
+        }
+      }
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          -webkit-transform: translate3d(0, 100%, 0);
+          transform: translate3d(0, 100%, 0);
+        }
+        100% {
+          opacity: 1;
+          -webkit-transform: none;
+          transform: none;
+        }
+      }
+      .fadeInUp {
+        -webkit-animation-name: fadeInUp;
+        animation-name: fadeInUp;
+      }
+      @-webkit-keyframes flipInX {
+        from {
+          -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+          transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+          -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+          opacity: 0;
+        }
+        40% {
+          -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+          transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+          -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+        }
+        60% {
+          -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+          transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+          opacity: 1;
+        }
+        80% {
+          -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+          transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+        }
+        100% {
+          -webkit-transform: perspective(400px);
+          transform: perspective(400px);
+        }
+      }
+      @keyframes flipInX {
+        from {
+          -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+          transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+          -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+          opacity: 0;
+        }
+        40% {
+          -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+          transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+          -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+        }
+        60% {
+          -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+          transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+          opacity: 1;
+        }
+        80% {
+          -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+          transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+        }
+        100% {
+          -webkit-transform: perspective(400px);
+          transform: perspective(400px);
+        }
+      }
+      .flipInX {
+        -webkit-backface-visibility: visible !important;
+        backface-visibility: visible !important;
+        -webkit-animation-name: flipInX;
+        animation-name: flipInX;
+      }
+      body > .wrapper {
+        overflow: hidden;
+        display: table-cell;
+        vertical-align: middle;
+      }
+      .brand {
+        height: 64px;
+        background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCIgd2lkdGg9IjEzOC44NzQiIGhlaWdodD0iNjMuOTE4IiB2aWV3Qm94PSIwIDAgMzkyMyAxODA1LjU5Ij4NCiAgPGRlZnM+DQogICAgPHN0eWxlPg0KICAgICAgLmNscy0xLCAuY2xzLTkgew0KICAgICAgICBmaWxsOiAjNDg3ZWVjOw0KICAgICAgfQ0KDQogICAgICAuY2xzLTEsIC5jbHMtMTAsIC5jbHMtMTEsIC5jbHMtMiwgLmNscy0zLCAuY2xzLTQsIC5jbHMtNiwgLmNscy03LCAuY2xzLTgsIC5jbHMtOSB7DQogICAgICAgIG9wYWNpdHk6IDAuODsNCiAgICAgIH0NCg0KICAgICAgLmNscy0xLCAuY2xzLTEwLCAuY2xzLTExLCAuY2xzLTIsIC5jbHMtNCwgLmNscy01LCAuY2xzLTYsIC5jbHMtOCB7DQogICAgICAgIGZpbGwtcnVsZTogZXZlbm9kZDsNCiAgICAgIH0NCg0KICAgICAgLmNscy0yIHsNCiAgICAgICAgZmlsbDogI2ZmZjg0NDsNCiAgICAgIH0NCg0KICAgICAgLmNscy0zIHsNCiAgICAgICAgc3Ryb2tlOiAjNDU3ODUxOw0KICAgICAgICBzdHJva2Utd2lkdGg6IDE2N3B4Ow0KICAgICAgICBmaWxsOiBub25lOw0KICAgICAgfQ0KDQogICAgICAuY2xzLTQgew0KICAgICAgICBmaWxsOiAjZTI1YWYyOw0KICAgICAgfQ0KDQogICAgICAuY2xzLTUgew0KICAgICAgICBmaWxsOiAjZTYwNDIxOw0KICAgICAgICBvcGFjaXR5OiAwLjc7DQogICAgICB9DQoNCiAgICAgIC5jbHMtNiB7DQogICAgICAgIGZpbGw6ICNmZmE2MWI7DQogICAgICB9DQoNCiAgICAgIC5jbHMtNyB7DQogICAgICAgIGZpbGw6ICMyMzRjZDE7DQogICAgICB9DQoNCiAgICAgIC5jbHMtOCB7DQogICAgICAgIGZpbGw6ICMzZTQ2YWY7DQogICAgICB9DQoNCiAgICAgIC5jbHMtMTAgew0KICAgICAgICBmaWxsOiAjODVjOTk1Ow0KICAgICAgfQ0KDQogICAgICAuY2xzLTExIHsNCiAgICAgICAgZmlsbDogIzQ1Nzg1MTsNCiAgICAgIH0NCiAgICA8L3N0eWxlPg0KICA8L2RlZnM+DQogIDxnPg0KICAgIDxnPg0KICAgICAgPHBhdGggZD0iTS0wLjAwMCwyNDIuMDAwIEwxNDQwLjAwMCw0NDAuNTM2IEwxNDQwLjAwMCw0NDIuMTM2IEwtMC4wMDAsNjQyLjAwMCBMLTAuMDAwLDI0Mi4wMDAgWiIgY2xhc3M9ImNscy0xIi8+DQogICAgICA8cGF0aCBkPSJNMzIwLjAwMCwxNTM4LjAwMCBMNTE4LjUzNiw5OC4wMDAgTDUyMC4xMzUsOTguMDAwIEw3MjAuMDAwLDE1MzguMDAwIEwzMjAuMDAwLDE1MzguMDAwIFoiIGNsYXNzPSJjbHMtMiIvPg0KICAgIDwvZz4NCiAgICA8Y2lyY2xlIGN4PSIxMDMyLjUiIGN5PSIxMTE2LjUiIHI9IjUxMi41IiBjbGFzcz0iY2xzLTMiLz4NCiAgICA8Zz4NCiAgICAgIDxwYXRoIGQ9Ik0xNDQwLjAwMCw0MDkuMDAwIEwyMzk0LjAwMCwxNDU5LjA2OSBMMjM5NC4wMDAsMTc1OS4wMDAgTDE0NDAuMDAwLDcwOC45MzEgTDE0NDAuMDAwLDQwOS4wMDAgWiIgY2xhc3M9ImNscy00Ii8+DQogICAgICA8cGF0aCBkPSJNMTQ0MC4wMDAsMTM4LjM5NyBMMTc0MC4wMDAsMzExLjYwMiBMMTc0MC4wMDAsMTgwNS42MDIgTDE0NDAuMDAwLDE2MzguMzk3IEwxNDQwLjAwMCwxMzguMzk3IFoiIGNsYXNzPSJjbHMtNSIvPg0KICAgICAgPHBhdGggZD0iTTE1OTAuMDAwLDgyMy44NTkgTDIxOTAuMDAwLDMwNC4wMDAgTDIxOTAuMDAwLDYwNC4xNDEgTDE1OTAuMDAwLDExMjQuMDAwIEwxNTkwLjAwMCw4MjMuODU5IFoiIGNsYXNzPSJjbHMtNiIvPg0KICAgIDwvZz4NCiAgICA8Zz4NCiAgICAgIDxyZWN0IHg9IjIyMzciIHk9Ijc2MSIgd2lkdGg9IjgwMCIgaGVpZ2h0PSIyNTAiIGNsYXNzPSJjbHMtNyIvPg0KICAgICAgPHBhdGggZD0iTTIyMzcuMDAwLDEzMzYuMDAwIEwzMDM3LjAwMCwxMzM2LjAwMCBMMzI1Mi44NjcsMTU4Ni4wMDAgTDIyMzcuMDAwLDE1ODYuMDAwIEwyMjM3LjAwMCwxMzM2LjAwMCBaIiBjbGFzcz0iY2xzLTgiLz4NCiAgICAgIDxwYXRoIGQ9Ik0yMjM3LjAwMCwxODYuMDAwIEwzMTE2LjY0MiwxODYuMDAwIEwzMzU0LjAwMCw0MzYuMDAwIEwyMjM3LjAwMCw0MzYuMDAwIEwyMjM3LjAwMCwxODYuMDAwIFoiIGNsYXNzPSJjbHMtNCIvPg0KICAgICAgPHJlY3QgeD0iMjIzNyIgeT0iMTg2IiB3aWR0aD0iMjUwIiBoZWlnaHQ9IjE0MDAiIGNsYXNzPSJjbHMtOSIvPg0KICAgIDwvZz4NCiAgICA8Zz4NCiAgICAgIDxwYXRoIGQ9Ik0zMTQ5LjkxMiw1ODQuMzYyIEwzODIzLjIxNCwxMjMyLjMyNyBMMzgyMy4yMTQsMTU2OS4wMjAgTDMxNDkuOTEyLDkyMS4wNTUgTDMxNDkuOTEyLDU4NC4zNjIgWiIgY2xhc3M9ImNscy0xMCIvPg0KICAgICAgPHBhdGggZD0iTTMwODIuNDg0LDU3MS42NTIgTDMzNjAuOTM2LDYwNS44NjAgTDMwNzkuMjI3LDE3NTkuMDAwIEwzMDc3LjAwMCwxNzU4LjcyNiBMMzA4Mi40ODQsNTcxLjY1MiBaIiBjbGFzcz0iY2xzLTExIi8+DQogICAgICA8cGF0aCBkPSJNMzg5MC4wMDUsLTAuMDAwIEwzODkyLjI0MSwwLjE5NCBMMzkyMy4wMDAsMTU4MC42NDYgTDM1ODcuNjEyLDE1NTEuNDk3IEwzODkwLjAwNSwtMC4wMDAgWiIgY2xhc3M9ImNscy0yIi8+DQogICAgPC9nPg0KICA8L2c+DQo8L3N2Zz4NCg==)
+          top center no-repeat;
+        background-size: contain;
+        margin-bottom: 18px;
+      }
+      .error-container {
+        padding-bottom: 24px;
+      }
+      .error-code {
+        font-size: 128px;
+        font-weight: 300;
+      }
+      .error-caption {
+        font-size: 24px;
+        font-weight: 300;
+        margin-bottom: 0.8em;
+      }
+      .container > p {
+        margin: 0 0 0.3em;
+      }
+      .footer {
+        height: 64px;
+        margin-top: 18px;
+      }
+      @media (max-width: 768px) {
+        .container,
+        .footer {
+          padding-left: 1em;
+          padding-right: 1em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="brand animated fadeIn"></div>
+      <div class="container error-container bg-white text-center">
+        <h1 class="error-code animated text-city flipInX">404</h1>
+        <h2 class="error-caption animated fadeInUp">您访问的页面可能已经删除、更名或暂时不可用</h2>
+        <p>
+          您可以选择 [
+          <a class="link-effect" href="javascript:window.location.reload()">重试</a>
+          ] [
+          <a class="link-effect" href="javascript:history.back()">返回</a>
+          ] 或者 [
+          <a class="link-effect" href="/">回到首页</a>
+          ]
+        </p>
+      </div>
+      <div class="footer text-muted text-center">
+        2000-
+        <span id="year"></span>
+        &copy;
+        <a href="http://token.wutnews.net/" target="_blank" class="link-effect">Token Team</a>
+      </div>
+    </div>
+    <script>
+      var today = new Date()
+      var year = today.getFullYear()
+      var footerYear = document.getElementById('year')
+      footerYear.innerText = year
+    </script>
+  </body>
+</html>
